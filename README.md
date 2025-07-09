@@ -1,93 +1,60 @@
-Numerical Analysis Project 2025
+#  Numerical Analysis Project 2025
+###  **Project Description**
 
 
-This repository contains implementations of numerical analysis algorithms learned in the Numerical Analysis course.
-The project demonstrates interpolation methods, root-finding methods, and graphical representations of each method via a Python Flask/FastAPI server and a React client.
+This project implements numerical analysis methods learned in the course, including:
+- **Interpolation:** linear, polynomial, Lagrange, Neville, cubic spline
+- **Root Finding:** bisection, Newton-Raphson, secant
+- **Graph plotting** for each method
 
+### **Project Structure**
+Numerical_Analysis_Project_2025-
+├── analiza_lib # Functions library
+├── server # Backend API (FastAPI)
+├── client # Frontend (React)
+└── README.md
 
-Implemented Methods:
+###  **Installation & Running Instructions**
+####  **Clone the repository**
+```bash
+git clone https://github.com/sara21379/Numerical_Analysis_Project_2025-.git
+cd Numerical_Analysis_Project_2025-
 
- Interpolation Methods
+Run the server (API)
+ Navigate to the server folder:
+cd server
+ Create a virtual environment (recommended):
+python -m venv venv
+Activate the environment:
+Windows:
+venv\Scripts\activate
+Mac/Linux:
+source venv/bin/activate
+Install dependencies:
+pip install fastapi uvicorn matplotlib numpy
+Run the server:
+uvicorn api:app --reload
+The server runs at:
+http://127.0.0.1:3000
+**How to Use**
+Run both the server and client as described above.
+Open http://localhost:8000 in your browser.
+Select the desired method, enter input values, and view the calculated results with graphs.
+ **Prerequisites:**
+Python 3.8+
+npm installed
+git installed
 
-   Linear Interpolation
+**What Did We Implement?**
+Full implementation of all listed numerical methods.
+Graph generation for each method.
+FastAPI server with POST requests for each function.
+React client for user-friendly interaction.
 
-   Polynomial Interpolation
-
-   Lagrange Interpolation
-
-   Neville Interpolation
-
-   Cubic Spline Interpolation
-
- Root Finding Methods
-
-   Bisection Method
-
-   Newton-Raphson Method
-
-   Secant Method
-
-   
-Project Structure
-
-analiza_lib/     # Core numerical methods library
-
-server/          # API server built with FastAPI
-
-client/          # Frontend React client (optional GUI)
-
-
-Installation Instructions:
-
- 1. Clone the repository
-  git clone https://github.com/sara21379/Numerical_Analysis_Project_2025-.git
-
- 2.Navigate to the project directory
-  cd Numerical_Analysis_Project_2025-
-
- 3.Install Python dependencies
-  pip install -r requirements.txt
-
- 4.Navigate to the server folder and run the server
-  cd server
-  uvicorn api:app --reload
-
- 5.Navigate to the client folder and run the client
-
-  cd ../client
-
-  npm install
-
-  npm start
-
-
-How to Use:
-
-Open Postman or your browser to test API endpoints (e.g., http://127.0.0.1:8000).
-
-Use each endpoint to send x and y values and receive plotted graphs.
-
-The React client (if run) provides a visual interface to call the APIs.
-
-
-Project Purpose
-
+**Project Purpose**
 This project aims to:
 
 Implement and practice numerical analysis algorithms.
-
 Develop clean, modular Python code for engineering applications.
-
 Practice client-server architecture for computational tools.
-
-
-Languages & Tools:
-
-Python (FastAPI, Matplotlib, Numpy)
-
-JavaScript (React.js)
-
-Postman for API testing
-
-Git & GitHub for version control
 
