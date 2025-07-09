@@ -39,26 +39,26 @@ client/          # Frontend React client (optional GUI)
 
 Installation Instructions:
 
-1. Clone the repository
- git clone https://github.com/sara21379/Numerical_Analysis_Project_2025-.git
+ 1. Clone the repository
+  git clone https://github.com/sara21379/Numerical_Analysis_Project_2025-.git
 
-2.Navigate to the project directory
- cd Numerical_Analysis_Project_2025-
+ 2.Navigate to the project directory
+  cd Numerical_Analysis_Project_2025-
 
-3.Install Python dependencies
- pip install -r requirements.txt
+ 3.Install Python dependencies
+  pip install -r requirements.txt
 
-4.Navigate to the server folder and run the server
- cd server
-uvicorn api:app --reload
+ 4.Navigate to the server folder and run the server
+  cd server
+  uvicorn api:app --reload
 
-5.Navigate to the client folder and run the client
+ 5.Navigate to the client folder and run the client
 
- cd ../client
+  cd ../client
 
- npm install
+  npm install
 
- npm start
+  npm start
 
 
 How to Use:
